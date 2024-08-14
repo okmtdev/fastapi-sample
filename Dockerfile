@@ -5,7 +5,6 @@ WORKDIR /app
 COPY app/pyproject.toml pyproject.toml
 COPY app/requirements.lock requirements.lock
 COPY app/requirements-dev.lock requirements-dev.lock
-COPY app/src src
 COPY app/README.md README.md
 
 RUN pip install --no-cache-dir -r requirements.lock || pip install --no-cache-dir -r requirements-dev.lock
